@@ -5,6 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayush Sharma - Software Engineer</title>
+    <style>
+        #div1{
+            font-family: 'Times New Roman', Times, serif;
+            padding: auto;
+            margin: 5px;
+            text-align: center;
+            padding: 0px;
+            font-size: xx-large
+
+        }
+        #submitbtn{
+            cursor:pointer;
+            font-size: 20px;
+            border-radius: 10px;
+            box-shadow: 20px;
+
+            /* background-color: rgb(80, 255, 252); */
+        }
+        .forminput{
+            font-size: large;
+            border-radius: 5px;
+            height: 25px;
+        }
+        #feed{
+            width: 400px;
+            height: 150px;
+            resize: none;
+            border-radius: 10px;
+            border : 2px solid;
+            font-size: x-large;          
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,9 +51,19 @@
     <div style="text-align: center;">
         <p>
             <a href="mailto:ayush@abes.ac.in">E-mail </a>
-
         </p>
     </div>
+    <div id="div1">
+        <h2>Feedback</h2>
+        <form action="feedsubmit.html" >
+            <label>Enter your Name</label><br>
+            <input type="text" placeholder="Enter your Name" class="forminput"><br><br>
+            <label>Enter your Contact number</label><br>
+            <input type="text" placeholder="Enter your Roll number" class="forminput"><br><br>
+            <textarea placeholder="Give your Feedback here" id="feed"></textarea><br>
+            <input type="submit" value="Submit" id="submitbtn">
+        </form>
+     </div>
     <div>
         <footer>
             <div style="max-width:750px;margin:auto;border-top:1px solid #e3c7c3;box-shadow:0px -1px 5px #9c9c9c"></div>
